@@ -1,0 +1,9 @@
+{{ if .Site.Params.rss }}
+<a id="contact-link-rss" class="contact_link" href="{{ .RSSlink }}" type="application/rss+xml">
+  <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+<div id="search-2" class="widget widget_search"><form method="get" id="searchform" action="https://wp.goodmemory.cc/">
+        <input type="text" class="input-text" name="s" id="s"  value="Search this site..." onfocus="if (this.value == 'Search this site...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search this site...';}" />
+</form><div class='clear'></div>
+
+{{ end }}
