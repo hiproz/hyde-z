@@ -9,17 +9,6 @@
   {{ partial "base/metas" . }}
   {{ partial "base/imports" . }}
   {{ partial "head-extra" . }}
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?d8a2d8c0d2f8211607a22b0dd3c927e4";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
 </head>
 <body{{ with .Site.Params.theme }} class="{{ . }}"{{ end }}>
   <main id="main-wrapper" class="container main_wrapper{{ with .Site.Params.sidebar }}{{ if and ( not ( eq . "" ) ) ( not ( eq . "false" ) ) }} has-sidebar{{ end }}{{ if eq . "right" }} right{{ end }}{{ end }}">
